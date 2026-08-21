@@ -88,3 +88,5 @@ npm run dev
 ```
 
 Open `http://localhost:5173` in your browser to experience **Communiti**.
+
+#This is an AI generated readme note. 
