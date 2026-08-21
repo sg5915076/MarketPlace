@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #5B4CF0;
+    --secondary: #15A37D;
+    --accent: #FFB84D;
+    --background: #F8F8FC;
+    --surface: #FFFFFF;
+    --text-primary: #202033;
+    --text-muted: #6B6B7B;
+    --error: #D64545;
+  }
+
+  body {
+    background-color: #F8F8FC;
+    color: #202033;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #202033;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #5B4CF0;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F0F0F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5D1FC;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5B4CF0;
+}
+
+/* Clean UI utility classes */
+.clean-surface {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E8F2;
+  box-shadow: 0 2px 8px -1px rgba(32, 32, 51, 0.04), 0 1px 3px 0 rgba(32, 32, 51, 0.02);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid #E8E8F2;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #E8E8F2;
+}
+
+.glass-dark {
+  background: rgba(32, 32, 51, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Subtle badge animations */
+@keyframes pulse-gentle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.94; transform: scale(1.015); }
+}
+
+.pulse-badge {
+  animation: pulse-gentle 3s infinite ease-in-out;
+}

@@ -1,0 +1,95 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#5B4CF0',
+          hover: '#4A3BE0',
+          active: '#3C2DCF',
+          50: '#F4F3FE',
+          100: '#EEECFE',
+          200: '#D5D1FC',
+          300: '#B4ADFA',
+          400: '#867BF7',
+          500: '#5B4CF0',
+          600: '#4A3BE0',
+          700: '#392BBF',
+          800: '#2A1F94',
+          900: '#1C1566',
+        },
+        secondary: {
+          DEFAULT: '#15A37D',
+          hover: '#118A6A',
+          active: '#0E7358',
+          50: '#F0FAF6',
+          100: '#E8F8F3',
+          200: '#C7EFE2',
+          300: '#9CE3CD',
+          400: '#56CEAA',
+          500: '#15A37D',
+          600: '#118A6A',
+          700: '#0E7358',
+          800: '#0B5944',
+          900: '#073D2F',
+        },
+        accent: {
+          DEFAULT: '#FFB84D',
+          hover: '#FFAA33',
+          50: '#FFFBF5',
+          100: '#FFF7EB',
+          200: '#FFEACC',
+          300: '#FFD9A3',
+          400: '#FFC875',
+          500: '#FFB84D',
+          600: '#F59E1B',
+          700: '#D98207',
+          800: '#A66000',
+        },
+        surface: {
+          DEFAULT: '#FFFFFF',
+          card: '#FFFFFF',
+          muted: '#F8F8FC',
+          border: '#E8E8F2',
+          borderLight: '#F0F0F7',
+        },
+        content: {
+          primary: '#202033',
+          muted: '#6B6B7B',
+          subtle: '#9A9AA8',
+          dark: '#141424',
+        },
+        destructive: {
+          DEFAULT: '#D64545',
+          hover: '#BF3939',
+          light: '#FDF2F2',
+          border: '#F9D5D5',
+        }
+      },
+      fontFamily: {
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        display: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+      },
+      borderRadius: {
+        'card': '16px',
+        'sub': '12px',
+        'pill': '9999px',
+        'outer': '18px',
+        'xl': '12px',
+        '2xl': '16px',
+        '3xl': '18px',
+      },
+      boxShadow: {
+        'clean': '0 2px 8px -1px rgba(32, 32, 51, 0.04), 0 1px 3px 0 rgba(32, 32, 51, 0.02)',
+        'card': '0 4px 16px -2px rgba(91, 76, 240, 0.06), 0 2px 6px -1px rgba(32, 32, 51, 0.03)',
+        'elevated': '0 12px 32px -4px rgba(91, 76, 240, 0.12), 0 4px 12px -2px rgba(32, 32, 51, 0.04)',
+        'modal': '0 24px 48px -12px rgba(32, 32, 51, 0.18), 0 8px 24px -4px rgba(91, 76, 240, 0.08)',
+      }
+    },
+  },
+  plugins: [],
+}
