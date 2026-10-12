@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌿 Communiti — Hyperlocal Micro-Segment Business & Artisan Discovery Platform
 
 **Communiti** is a production-ready, full-stack hyperlocal marketplace and discovery platform designed specifically for home-based makers and micro-segment creators across India (Home Bakers, Bean-to-Bar Chocolatiers, Bespoke Gifting Curators, Studio Potters & Crafters, Artisanal Gourmet Preserves, Handmade Jewellery Designers, and Homemade Botanical Winemakers).
@@ -88,3 +89,6 @@ npm run dev
 ```
 
 Open `http://localhost:5173` in your browser to experience **Communiti**. 
+=======
+# MarketPlace
+>>>>>>> 3dd367490e6f2fb585747e52a7117e8f5884c061
